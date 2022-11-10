@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container container-modal">
+        <h1>BlackJack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <p>Cards: <span id="cards-el"></span></p>
+        <p>Sum: <span id="sum-el"></span></p>
+        <div class="btns-el">
+            <button id="start-game-btn" disabled>START GAME</button>
+            <button id="new-card-btn" disabled>NEW CARD</button>
+        </div>
+        <p id="player-name-el">Player Name: </p>
+        <p>Balance: <span id="balance-el"></span></p>
+    </div>
+    <div id="modal-div" class="modal-div container-modal">
+        <div class="modal-btn-div">
+            <button type="button" id="modal-btn" disabled>Close Modal</button>
+        </div>
+        <div id="modal-inner">
+            <p>Please enter your information <br> below to play this game!</p>
+            <form id="form-el">
+                <div>
+                    <label for="user-name-input">Your Preferred Name:</label><br>
+                    <input type="text" name="user-name" id="user-name-input" placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label for="recharge">Amount to start with:</label><br>
+                    <input type="number" name="recharge" id="recharge" placeholder="$100" min="50" required>
+                </div>
+                <input type="submit" value="Submit form" class="form-btn">
+            </form>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
