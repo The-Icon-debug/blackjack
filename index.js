@@ -58,7 +58,7 @@ function displayModal(){
     sum = cardOne + cardTwo
     sumEl.innerText = sum
     newCardBtn.disabled = false
-    startGameBtn.disabled = true
+    startGameBtn.disabled = true                                
     
  }
 
